@@ -1,0 +1,58 @@
+package com.company.AirlineTicket;
+
+import java.time.LocalDateTime;
+
+public class FlightInfo {
+    private final int flightId;
+    private final String departure;
+    private final String arrival;
+    private final LocalDateTime departureTime;
+    private final int placeId;
+    private double cost;
+
+
+    public FlightInfo(int flightId, String departure, String arrival, LocalDateTime departureTime, int placeId, double cost) {
+        this.flightId = flightId;
+        this.departure = departure;
+        this.arrival = arrival;
+        this.departureTime = departureTime;
+        this.placeId = placeId;
+        this.cost = cost;
+    }
+
+    public int getFlightId() {
+        return flightId;
+    }
+
+    public String getDeparture() {
+        return departure;
+    }
+
+    public String getArrival() {
+        return arrival;
+    }
+
+    public LocalDateTime getDepartureTime() {
+        return departureTime;
+    }
+
+    public int getPlaceId() {
+        return placeId;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    @Override
+    public String toString() {
+        return "FlightInfo{" +
+                "flightId=" + flightId +
+                ", departure='" + departure + '\'' +
+                ", arrival='" + arrival + '\'' +
+                ", departureTime=" + departureTime +
+                ", placeId=" + placeId +
+                ", cost=" + cost +
+                '}';
+    }
+}
