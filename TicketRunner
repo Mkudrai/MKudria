@@ -1,0 +1,34 @@
+package com.company.AirlineTicket;
+
+import java.time.LocalDateTime;
+
+public class TicketRunner {
+
+    public static void main(String[] args) {
+        PassengerInfo passengerInfo1 = new PassengerInfo("Nick", "James", 5555);
+        PassengerInfo passengerInfo2 = new PassengerInfo("Max", "Max", 654);
+        FlightInfo flightInfo1 = new FlightInfo(444, "Berlin", "Kiev", LocalDateTime.now(), 33, 1500);
+        FlightInfo flightInfo2 = new FlightInfo(55, "Kiev", "Prague", LocalDateTime.now(), 55, 4000);
+        Baggage baggage1 = new Baggage(30,2);
+        Meal meal1 = new Meal(Meal.Meals.BURGER, Meal.Drinks.YES,20);
+
+
+
+
+        Ticket a = new Ticket(5555, passengerInfo2,flightInfo1);
+        VipTicket b = new VipTicket(3434,passengerInfo1,flightInfo2,baggage1,meal1);
+
+
+        System.out.println(a.toString());
+        System.out.println(a.getBaseFlightCost());
+        System.out.println();
+        System.out.println(b.toString());
+        System.out.println(b.getTotalCost());
+
+
+    }
+
+
+}
+
+
