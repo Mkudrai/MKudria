@@ -1,0 +1,43 @@
+package com.company.AirlineTicket;
+
+public class Meal {
+    private final Meals meals;
+    private final Drinks drinks;
+    private final double price;
+
+
+    public Meal(Meals meals, Drinks drinks, double price) {
+        this.meals = meals;
+        this.drinks = drinks;
+        this.price = price;
+    }
+
+    public Meals getMeals() {
+        return meals;
+    }
+
+    public Drinks getDrinks() {
+        return drinks;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Meal{" +
+                "meals=" + meals +
+                ", drinks=" + drinks +
+                ", price=" + price +
+                '}';
+    }
+
+    enum Meals {SALAD,BURGER,SOUP
+
+    }
+
+    public enum Drinks {YES, NO
+    }
+
+}
