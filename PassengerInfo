@@ -1,0 +1,35 @@
+package com.company.AirlineTicket;
+
+public class PassengerInfo {
+    private final String name;
+    private final String surname;
+    private final int passId;
+
+
+    public PassengerInfo(String name, String surname, int passId) {
+        this.name = name;
+        this.surname = surname;
+        this.passId = passId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public int getPassId() {
+        return passId;
+    }
+
+    @Override
+    public String toString() {
+        return "PassengerInfo{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", passId=" + passId +
+                '}';
+    }
+}
