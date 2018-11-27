@@ -1,0 +1,31 @@
+package com.company.AirlineTicket;
+
+public class Baggage {
+    final double costOfOne;
+    final double countOfBags;
+
+    public Baggage(double costOfOne, double countOfBags) {
+        this.costOfOne = costOfOne;
+        this.countOfBags = countOfBags;
+    }
+
+    public double getCostOfOne() {
+        return costOfOne;
+    }
+
+    public double getCountOfBags() {
+        return countOfBags;
+    }
+
+    public double getCostofBaggage (){
+        return costOfOne * countOfBags;
+    }
+
+    @Override
+    public String toString() {
+        return "Baggage{" +
+                "costOfOne=" + costOfOne +
+                ", countOfBags=" + countOfBags +
+                '}';
+    }
+}
