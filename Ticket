@@ -1,0 +1,43 @@
+package com.company.AirlineTicket;
+
+public class Ticket {
+    private int passSeat;
+    private PassengerInfo passengerInfo;
+    private FlightInfo flightInfo;
+
+
+    public Ticket (){
+
+    }
+
+    public Ticket(int passSeat, PassengerInfo passengerInfo, FlightInfo flightInfo) {
+        this.passSeat = passSeat;
+        this.passengerInfo = passengerInfo;
+        this.flightInfo = flightInfo;
+    }
+
+    public int getPassSeat() {
+        return passSeat;
+    }
+
+    public PassengerInfo getPassengerInfo() {
+        return passengerInfo;
+    }
+
+    public FlightInfo getFlightInfo() {
+        return flightInfo;
+    }
+
+    public double getBaseFlightCost (){
+        return getFlightInfo().getCost();
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "passSeat=" + passSeat +
+                ", passengerInfo=" + passengerInfo +
+                ", flightInfo=" + flightInfo +
+                '}';
+    }
+}
